@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="webstyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="symbol-bg"></div>
+            <div class="polka-bg"></div>
+        </div>
+        <div>
+            <img src="images/bg/mathlogo.png" style="display: block; margin-left: auto; margin-right: auto; width: 25%; height: 25%">
+        </div>
+        <div class="content">
+            <h1>Lesson 3 Quiz (20 points)</h1>
+            <h3>A. Determine if the two triangles are similar. (2pts each)</h3>
+            <p>
+                1.<br>
+                <img style="width: 30%;height: 30%; border: 2px solid black;" src="images/3rd/quiz/similar1.jpg"><br><br>
+                a) Angle-Angle Similarity<br>
+                b) Side-Angle-Side Similarity<br>
+                c) Side-Side-Side Similarity<br>
+                d) Not Similar<br><br>
+                2.<br>
+                <img style="width: 30%;height: 30%; border: 2px solid black;" src="images/3rd/quiz/similar2.jpg"><br><br>
+                a) Angle-Angle Similarity<br>
+                b) Side-Angle-Side Similarity<br>
+                c) Side-Side-Side Similarity<br>
+                d) Not Similar<br><br>
+                3.<br>
+                <img style="width: 30%;height: 30%; border: 2px solid black;" src="images/3rd/quiz/similar3.jpg"><br><br>
+                a) Angle-Angle Similarity<br>
+                b) Side-Angle-Side Similarity<br>
+                c) Side-Side-Side Similarity<br>
+                d) Not Similar<br><br>
+                4.<br>
+                <img style="width: 30%;height: 30%; border: 2px solid black;" src="images/3rd/quiz/similar4.jpg"><br><br>
+                a) Angle-Angle Similarity<br>
+                b) Side-Angle-Side Similarity<br>
+                c) Side-Side-Side Similarity<br>
+                d) Not Similar<br><br>
+                5.<br>
+                <img style="width: 30%;height: 30%; border: 2px solid black;" src="images/3rd/quiz/similar5.jpg"><br><br>
+                a) Angle-Angle Similarity<br>
+                b) Side-Angle-Side Similarity<br>
+                c) Side-Side-Side Similarity<br>
+                d) Not Similar<br>
+            </p>
+            <h3>B. Solve for the following triangles using the Pythagorean Theorem (2pts each)</h3>
+            <p>
+                1. Solve for b.<br>
+                <img style="width: 30%;height: 30%; border: 2px solid black;" src="images/3rd/quiz/pythaquiz1.png"><br><br>
+                2. Solve for c.<br>
+                <img style="width: 30%;height: 30%; border: 2px solid black;" src="images/3rd/quiz/pythaquiz2.png"><br><br>
+                3. Solve for c.<br>
+                <img style="width: 30%;height: 30%; border: 2px solid black;" src="images/3rd/quiz/pythaquiz3.png"><br><br>
+                4. Solve for a.<br>
+                <img style="width: 30%;height: 30%; border: 2px solid black;" src="images/3rd/quiz/pythaquiz4.png"><br><br>
+                5. Solve for b.<br>
+                <img style="width: 30%;height: 30%; border: 2px solid black;" src="images/3rd/quiz/pythaquiz5.png"><br><br>
+            </p>
+        </div>
+        <div class="content">
+            <button onclick="toggleWindow()"><b>Answer Key</b></button>
+            <button onclick="document.location='homepage.html'"><b>Return to Home</b></button>
+        </div>
+
+        <div id="Toggle">
+            <h1>Quiz Answers</h1>
+            <h3>A. Determine if the two triangles are similar.</h3>
+            <p>
+                1. c) Side-Side-Side Similarity<br>
+                2. b) Side-Angle-Side Similarity<br>
+                3. a) Angle-Angle Similarity<br>
+                4. d) Not Similar<br>
+                5. a) Angle-Angle Similarity<br>
+            </p>
+            <h3>B. Solve for the following triangles using the Pythagorean Theorem</h3>
+            <p>
+                1. b ≈ 5.66<br>
+                2. c ≈ 18.03<br>
+                3. c ≈ 21.95<br>
+                4. a ≈ 7.21<br>
+                5. b ≈ 12.04<br>
+            </p>
+        </div>
+
+        <div class="content">
+            <p style="text-align: center; line-height: 0%;"><b>©2024 by Christian Robert L. Daquipil</b></p>
+        </div>
+
+        <script>
+            function toggleWindow() {
+                var x = document.getElementById("Toggle");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

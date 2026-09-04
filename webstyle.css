@@ -1,0 +1,177 @@
+body {
+    background-image: url(images/bg/yellowbg.png);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 54px;
+    font-family: 'Century Gothic';
+    text-align: center;
+    line-height: 0%;
+}
+h2 {
+    font-size: 40px;
+    font-family: 'Century Gothic';
+    text-align: center;
+}
+h3 {
+    font-size: 24px;
+    font-family: 'Century Gothic';
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Century Gothic';
+}
+
+button {
+    background-color: rgb(28, 68, 155);
+    border: 3px solid rgb(16, 15, 85);
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Century Gothic';
+    color: white;
+    font-size: 24px;
+}
+button:hover {
+    background-color: white;
+    border: 3px solid rgb(16, 15, 85);
+    color: black;
+}
+button:active {
+    background-color: rgb(16, 15, 85);
+    border: 3px solid rgb(28, 68, 155);
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    margin-top: 24px;
+    background-color: #feffb288;
+    border: 3px solid rgb(16, 15, 85);
+    border-radius: 20px;
+    padding: 16px;
+}
+
+#Toggle {
+    background-color: #feffb288;
+    border: 3px solid rgb(16, 15, 85);
+    border-radius: 20px;
+    padding: 16px;
+    display: none;
+    margin-top: 24px;
+}
+
+.container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: -3;
+    overflow: hidden;
+}
+.polka-bg {
+    background: url(images/bg/polkadots.png) repeat;
+    opacity: 0.8;
+    position: fixed;
+    width: 2160px;
+    height: 2160px;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    animation: polka-slide 60s linear infinite;
+}
+.symbol-bg {
+    background: url(images/bg/mathsymbols.png) repeat;
+    opacity: 0.7;
+    background-size: 20%;
+    position: fixed;
+    width: 2160px;
+    height: 2160px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    animation: symbol-slide 100s linear infinite;
+}
+
+ul {
+    list-style-type: square;
+    font-size: 20px;
+    font-family: 'Century Gothic';
+}
+
+nav {
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: 'Century Gothic';
+}
+.crumbs li {
+    display: inline-block;
+    font-size: 24px;
+}
+.crumb a::after {
+    font-family: 'Century Gothic';
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+.lesson-border {
+    background-color: rgba(236, 230, 153, 0.541);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.lesson-border > button {
+    background-color: rgb(28, 68, 155);
+    border: 3px solid rgb(16, 15, 85);
+    width: 48%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-family: 'Century Gothic';
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+}
+.lesson-border > button:hover {
+    background-color: white;
+    border: 3px solid rgb(16, 15, 85);
+    color: black;
+}
+.lesson-border > button:active {
+    background-color: rgb(16, 15, 85);
+    border: 3px solid rgb(28, 68, 155);
+    color: rgb(255, 255, 255);
+}
+
+@keyframes polka-slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-720px, -720px, 0);
+    }
+}
+@keyframes symbol-slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-720px, -720px, 0);
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="webstyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="symbol-bg"></div>
+            <div class="polka-bg"></div>
+        </div>
+        <div>
+            <img src="images/bg/mathlogo.png" style="display: block; margin-left: auto; margin-right: auto; width: 25%; height: 25%">
+        </div>
+        <div class="content">
+            <h1>Lesson 3 - Triangle Geometry</h1>
+            <nav class="crumbs" style="border-bottom: none; border-top: 2px solid black;">
+                <ol>
+                    <li class="crumb"><a href="homepage.html">Home</a></li>
+                    <li class="crumb">Lesson 3 - Triangle Geometry</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="content">
+            <h2 style="line-height: 0%;">CHOOSE A TOPIC</h2>
+            <div class="lesson-border">
+                <button onclick="document.location='tri-sim.html'"><b>Triangle Similarity</b></button>
+                <button onclick="document.location='pythagorean-theorem.html'"><b>Pythagorean Theorem</b></button>
+            </div>
+            <br>
+            <button onclick="toggleWindow()"><b>Lesson Summary</b></button>
+            <button onclick="document.location='3rd-quiz.html'"><b>Enter Quiz</b></button>
+        </div>
+
+        <div id="Toggle">
+            <h1>Lesson 3 Summary</h1>
+            <ul>
+                <li>Triangle Similarity is the concept of two triangles having the same proportions no matter what size.</li>
+                <li>There are three Theorems that can help prove the similarities between triangles.</li>
+                <li>The Pythagorean Theorem deals with the relationships between the sides of a right triangle.</li>
+                <li>The formula for the theorem equates to c² = a² + b².</li>
+            </ul>
+            <br>
+        </div>
+
+        <div class="content">
+            <p style="text-align: center; line-height: 0%;"><b>©2024 by Christian Robert L. Daquipil</b></p>
+        </div>
+
+        <script>
+            function toggleWindow() {
+                var x = document.getElementById("Toggle");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

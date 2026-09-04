@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="webstyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="symbol-bg"></div>
+            <div class="polka-bg"></div>
+        </div>
+        <div>
+            <img src="images/bg/mathlogo.png" style="display: block; margin-left: auto; margin-right: auto; width: 25%; height: 25%">
+        </div>
+        <div class="content">
+            <h1>Lesson 4 Quiz (20 points)</h1>
+        </div>
+        <div class="content">
+            <h3>Solve each problem using the Law of Sines and Cosines (4pts each)</h3>
+            <p>
+                <b>1. ∠A=23°,∠B=110°,c=50</b><br><br>
+                <img style="width: 25%;height: 25%;" src="images/4th/quiz/1.png"><br>
+                <b>2. ∠A=82°,∠B=65.4°,b=36.5</b><br><br>
+                <img style="width: 25%;height: 25%;" src="images/4th/quiz/2.png"><br>
+                <b>3. ∠A=42°,∠B=61°,a=12</b><br><br>
+                <img style="width: 25%;height: 25%;" src="images/4th/quiz/3.png"><br>
+                <b>4. ∠C=120°,b=22,a=30</b><br><br>
+                <img style="width: 30%;height: 30%;" src="images/4th/quiz/4.png"><br>
+                <b>5. a=25,b=32,c=40</b><br><br>
+                <img style="width: 25%;height: 25%;" src="images/4th/quiz/5.png"><br>
+            </p>
+            <button onclick="toggleWindow()"><b>Answer Key</b></button>
+            <button onclick="document.location='homepage.html'"><b>Return to Home</b></button>
+        </div>
+
+        <div id="Toggle">
+            <h1>Quiz Answers</h1>
+            <p>
+                1. ∠C = 47°; a = 26.71, b = 64.24<br>
+                2. ∠C = 32.6°, a = 39.75, c = 21.63<br>
+                3. ∠C = 77°, b = 15.69, 17.47<br>
+                4. ∠A = 35.08°, ∠B = 24.92°, c = 45.21<br>
+                5. ∠A = 38.66°, ∠B = 53.09°, ∠C = 88.25°<br>
+            </p>
+        </div>
+
+        <div class="content">
+            <p style="text-align: center; line-height: 0%;"><b>©2024 by Christian Robert L. Daquipil</b></p>
+        </div>
+
+        <script>
+            function toggleWindow() {
+                var x = document.getElementById("Toggle");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

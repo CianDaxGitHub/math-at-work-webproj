@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="webstyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="symbol-bg"></div>
+            <div class="polka-bg"></div>
+        </div>
+        <div>
+            <img src="images/bg/mathlogo.png" style="display: block; margin-left: auto; margin-right: auto; width: 25%; height: 25%">
+        </div>
+        <div class="content">
+            <h1>Lesson 1 Quiz</h1>
+        </div>
+        <div class="content">
+            <h3>A. Find the roots of the following equations. (2pts each)</h3>
+            <p>
+                1.<br>
+                <img style="width: 25%;height: 25%;" src="images/1st/quiz/1a.png"><br><br>
+                2.<br>
+                <img style="width: 25%;height: 25%;" src="images/1st/quiz/2a.png"><br><br>
+                3.<br>
+                <img style="width: 25%;height: 25%;" src="images/1st/quiz/3a.png"><br><br>
+                4.<br>
+                <img style="width: 25%;height: 25%;" src="images/1st/quiz/4a.png"><br><br>
+                5.<br>
+                <img style="width: 25%;height: 25%;" src="images/1st/quiz/5a.png"><br><br>
+            </p>
+            <h3>B. Determine the following parts of the Parabola shown below. (5pts)</h3>
+            <p>
+                <img style="width: 30%;height: 30%; border: 2px solid black;" src="images/1st/quiz/quadfunc.png"><br><br>
+                Vertex (1pt): <br>
+                x-intercepts (2pts): <br>
+                y-intercept (1pt): <br>
+                Axis of Symmetry (1pt): <br>
+            </p>
+            <h3>C. Given the General Form, Find the vertex of the following Quadratic Function. (5pts)</h3>
+            <p>
+                <img style="width: 30%;height: 30%; border: 2px solid black;" src="images/1st/quiz/quadfunc2.png"><br><br>
+
+            </p>
+            <button onclick="toggleWindow()"><b>Answer Key</b></button>
+            <button onclick="document.location='homepage.html'"><b>Return to Home</b></button>
+        </div>
+
+        <div id="Toggle">
+            <h1>Quiz Answers</h1>
+            <h3>A. Find the roots of the following equations.</h3>
+            <p>
+                1. x = 2 & x = -9<br>
+                2. x = 9 & x = 8<br>
+                3. x = 16 & x = -4<br>
+                4. x = -6 & x = -15/2<br>
+                5. x = 4 & x = -6<br>
+            </p>
+            <h3>B. Determine the following parts of the Parabola shown below. </h3>
+            <p>
+                Vertex (1pt): (-3/2, -25/4)<br>
+                x-intercepts (2pts): (-4, 0), (1,0)<br>
+                y-intercept (1pt): (0, -4)<br>
+                Axis of Symmetry (1pt): x = -3/2<br>
+            </p>
+            <h3>C. Find the vertex of the Quadratic Function. </h3>
+            <p>
+                h = -(10/2(4)) = -10/8 = -5/4<br>
+                k = 4(-5/4)^2 + 10(-5/4) + 10<br>
+                k = 25/4 - 50/4 + 10<br>
+                k = -25/4 + 40/4<br>
+                k = 15/4<br>
+                Final Coordinates: (-5/4, 15/4)
+            </p>
+        </div>
+
+        <div class="content">
+            <p style="text-align: center; line-height: 0%;"><b>©2024 by Christian Robert L. Daquipil</b></p>
+        </div>
+
+        <script>
+            function toggleWindow() {
+                var x = document.getElementById("Toggle");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="webstyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="symbol-bg"></div>
+            <div class="polka-bg"></div>
+        </div>
+        <div>
+            <img src="images/bg/mathlogo.png" style="display: block; margin-left: auto; margin-right: auto; width: 25%; height: 25%">
+        </div>
+        <div class="content">
+            <h1>Lesson 4 - Sine and Cosine Laws</h1>
+            <nav class="crumbs" style="border-bottom: none; border-top: 2px solid black;">
+                <ol>
+                    <li class="crumb"><a href="homepage.html">Home</a></li>
+                    <li class="crumb">Lesson 4 - Sine and Cosine Laws</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="content">
+            <h2 style="line-height: 0%;">CHOOSE A TOPIC</h2>
+            <div class="lesson-border">
+                <button onclick="document.location='sine-law.html'"><b>Law of Sines</b></button>
+                <button onclick="document.location='cosine-law.html'"><b>Law of Cosines</b></button>
+            </div>
+            <br>
+            <button onclick="toggleWindow()"><b>Lesson Summary</b></button>
+            <button onclick="document.location='4th-quiz.html'"><b>Enter Quiz</b></button>
+        </div>
+
+        <div id="Toggle">
+            <h1>Lesson 4 Summary</h1>
+            <ul>
+                <li>Law of Sines are based on right-triangle relationships to allow for solving sides and angles without the need for a right triangle.</li>
+                <li>The Law of Sines are used when there is at least two angles and one side.</li>
+                <li>The Law of Cosines are a feasible alternative if the Sine Law cannot be applied due to a lack of a Side-Angle pair.</li>
+                <li>This Law can be used even if all angles are missing.</li>
+            </ul>
+            <br>
+        </div>
+
+        <div class="content">
+            <p style="text-align: center; line-height: 0%;"><b>©2024 by Christian Robert L. Daquipil</b></p>
+        </div>
+
+        <script>
+            function toggleWindow() {
+                var x = document.getElementById("Toggle");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
